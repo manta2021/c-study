@@ -1,0 +1,20 @@
+//
+//  161.cpp
+//  c++ study
+//
+//  Created by 김혜준 on 2021/12/17.
+//
+
+#include<stdio.h>
+int main(void)
+{
+    int a = 1;
+    
+    do
+    {
+        a = a * 2;
+    }while(a < 10);
+    printf("a : %d\n", a);
+    
+    return 0;
+}
