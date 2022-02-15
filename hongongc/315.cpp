@@ -9,14 +9,29 @@
 
 int main(void)
 {
-    int i = 0, count = 0, z = 0;
     char ch;
-    
-    ch = getchar();
-    while()
+    int len = 0;
+    int maxlen = 0;
+    while(ch != '0')
     {
-        printf("1");
+        ch = '\0';
+        while(ch != '\n' && ch !='0')
+        {
+            ch = getchar();
+            len++;
+            
+        }
+        len = len - 1;
+        if(len > maxlen)
+        {
+            maxlen = len;
+        }
+        len = 0;
     }
+    printf("가장 긴 단어의 길이 : %d\n", maxlen);
+    
+          
+    
     
     return 0;
     
