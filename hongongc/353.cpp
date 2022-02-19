@@ -18,7 +18,7 @@ int main(void)
     scanf("%s", str);
     printf("입력한 단어 : %s,", str);
     
-    while(i != 14)
+    /*while(i != 14)
     {
         count++;
         i++;
@@ -27,9 +27,13 @@ int main(void)
         {
             str[i] = '*';
         }
+    }*/
+    int length = strlen(str);
+//    if(length - 5 < 0) length = 5;
+    if(length > 5){
+        str[5] = '\0';
+        strncat(str, "**********",length  - 5);
     }
-    
-
     printf("생략한 단어 : %s\n", str);
     
     return 0;
