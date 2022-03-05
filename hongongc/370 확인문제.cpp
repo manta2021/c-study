@@ -25,7 +25,7 @@ int main(void)
 
 int func(void)
 {
-    register int a = 0;
+    static int a = 0;
     a++;
     return a;
 }

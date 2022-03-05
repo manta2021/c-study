@@ -15,22 +15,35 @@ void swap(int *a, int *b)
 }
 int main(void)
 {
-    int i = 0, j = 0, count = 0, n = 0, m = 0;
-    int ary[80];
+    int i = 0, j = 0, count = 0, n = 0, m = 0, a = 0;
+    int ary[10001];
     
     scanf("%d %d", &n, &m);
     
-    for(i = 0; i < n - 1; i++)
+    for(i = 0; i < n; i++)
+    {
+        scanf("%d", &a);
+        ary[i] = a;
+    }
+    for(i = 0; i < n; i++)
     {
         for(j = 0; j < n - 1; j++)
         {
-            swap(&ary[j], &ary[j + 1]);
-            count++;
-            if(count == 10)
+            if(ary[j] > ary[j + 1])
             {
-                printf("%d, %d", ary[j], ary[j + 1]);
+                swap(&ary[j], &ary[j + 1]);
+                count++;
+                if(count == m)
+                {
+                    printf("%d %d\n", ary[j], ary[j + 1]);
+                }
             }
         }
+    
+    }
+    if(m > count)
+    {
+        printf("-1\n");
     }
     
     return 0;
