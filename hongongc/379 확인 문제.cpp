@@ -7,9 +7,9 @@
 
 #include <stdio.h>
 
-void add_by_pointer(int *pa, int *pb, int *pc)
+void add_by_pointer(int *pa, int *pb, int *pr)
 {
-    *pc = *pa + *pb;
+    *pr = *pa + *pb;
 }
 
 int main(void)
