@@ -9,7 +9,7 @@
 
 int main(void)
 {
-    int a = 0, arr[4] = {0,0,0}, i = 0;
+    int a = 0, arr[1000001] = {0,}, i = 0;
     
     
     scanf("%d", &a);

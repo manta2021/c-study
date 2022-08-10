@@ -1,8 +1,8 @@
 //
-//  21758꿀따기 n <= 20.cpp
+//  21758꿀따기  n <= 2.cpp
 //  c++ study
 //
-//  Created by 김혜준 on 2022/07/09.
+//  Created by 김혜준 on 2022/08/06.
 //
 
 #include <stdio.h>
@@ -90,6 +90,6 @@ int main(void)
     
     printf("%d\n", max);
     
-    
     return 0;
 }
+
