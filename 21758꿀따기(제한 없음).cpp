@@ -42,17 +42,17 @@ int main(void)
     
     //왼쪽에서 오른쪽 방향
     s2 = 0;
-    for(int bee1 = 1; bee1 < N - 1; bee1++)
+    for(int bee1 = 1; bee1 < N; bee1++)
     {
         s2 += arr[bee1];
     }
     
     int max1 = -999999;
-    for(int bee2 = 1; bee2 < N - 1; bee2++)
+    for(int bee2 = 1; bee2 < N; bee2++)
     {
         
         int bee2Sum = 0;
-        for(i = bee2 + 1;  i < N ; i++)
+        for(i = bee2 + 1;  i < N + 1; i++)
         {
             bee2Sum += arr[i];
             
@@ -66,6 +66,7 @@ int main(void)
     }
     
     s2 += max1;
+    
     
     
     //오른쪽에서 왼쪽
