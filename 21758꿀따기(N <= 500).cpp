@@ -16,7 +16,7 @@ int main(void)
     s2 = 0,
     s3 = 0,
     max = 0;
-    
+     
     scanf("%d", &N);
         for(i = 0; i < N; i++)
     {
